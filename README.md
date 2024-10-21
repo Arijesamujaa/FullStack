@@ -1,3 +1,2 @@
 # FullStack
 
-## DS Training
