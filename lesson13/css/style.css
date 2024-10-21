@@ -1,0 +1,50 @@
+ul{
+    /*list-style-image: url("../images/resize.jpg");*/
+    border-left: 5px solid green;
+    background-color: #f1f1f1;
+    list-style-type: none;
+    padding: 15px 25px;
+}
+
+ul li{
+    padding: 8px 16px;
+    border-bottom: 1px solid gray;
+}
+
+ol{
+    list-style-type: lower-alpha;
+    background: #ffeeee;
+    padding: 15px;
+}
+
+ol li{
+    background: #a6a6ca;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+table{
+    border-collapse: collapse; /* E largon hapesiren mes border te seciles cell */
+}
+
+td, th{
+    border: 1px solid #eee;
+    padding: 15px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: cadetblue;
+}
+
+tbody tr:nth-child(even) {
+    background-color:darkcyan;
+}
+
+div{
+    margin: 20px;
+    padding: 10px;
+    overflow: scroll;
+    background-color: rgb(199, 224, 224);
+    width: 250px;
+    height: 250px;
+}
