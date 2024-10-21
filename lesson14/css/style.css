@@ -34,3 +34,50 @@ input:out-of-range {
 input :required{
     background-color: #9ee5f0;
 }
+
+input:focus {
+    background-color: yellow;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+span:first-of-type {
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+form {
+    margin-top: 50px;
+}
+
+p {
+    width: 200px;
+}
+
+p::first-line {
+    color: blue;
+}
+
+p::first-letter {
+    font-size: 40px;
+}
+
+p::before {
+    content: url("../images/resize.jpg");
+}
+
+p::selection {
+    color: pink;
+    background: yellow;
+}
+
+div {
+    opacity: 0.5;
+}
