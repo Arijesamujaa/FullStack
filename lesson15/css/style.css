@@ -1,0 +1,51 @@
+#static{
+    position: static;
+    border: 2px solid black;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+}
+
+#relative{
+    position: relative;
+    border: 2px solid black;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    top: 50px;
+    left: 20px;
+}
+
+#fixed{
+    position: fixed;
+    border: 2px solid black;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    top: 100px;
+    right: 20px;
+}
+
+#parent{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    top: 100px;
+}
+
+#absolute{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    top: 50px;
+    left: 50px;
+}
+
+#sticky{
+    position: sticky;
+    background-color: beige;
+    padding: 20px;
+    top: 0px;
+}

@@ -1,0 +1,23 @@
+nav ul{
+    background-color: #333;
+}
+
+nav ul li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: azure;
+    padding: 10px;
+}
+
+nav{
+    width: 10%;
+}
+
+nav ul li a:hover{
+    background-color:darkgray;
+    font-style: italic;
+}

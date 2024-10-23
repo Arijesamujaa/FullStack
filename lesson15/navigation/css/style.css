@@ -1,0 +1,43 @@
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(3, 3, 61);
+    text-align: center;
+    padding: 30px;
+}
+
+nav li{
+    display: inline;
+}
+
+nav ul li a{
+    padding: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+.active a{
+    color:lightslategray
+}
+
+nav ul li a:hover{
+    background-color: rgb(41, 41, 94);
+    font-style: italic;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+.paragraph{
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+    padding: 25px;
+    border: 2px solid black;
+}
+
