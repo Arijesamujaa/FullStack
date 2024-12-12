@@ -41,24 +41,56 @@
 </body>
 </html> -->
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="add.php" method="POST">
+
+        <input type="text" name="name" placeholder="Name"><br>
+        <input type="text" name="username" placeholder="Username"><br>
+        <input type="email" name="email" placeholder="Email"><br><br>
+        <button type="submit" name="submit">Add</button>
+
+    </form>
+
+
+
+
+</body>
+
+</html>
+
 
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset = "UTF-8">
+    <meta charset="UTF-8">
     <title>Fetching data</title>
     <style>
-        table,td,th{
-            border:1px solid black;
-            border-collapse:collapse;
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
         }
-        td,th{
-            padding:10px 20;
+
+        td,
+        th {
+            padding: 10px 20;
         }
     </style>
 </head>
+
 <body>
-<?php
+    <?php
 
     include_once('config.php');
 
@@ -66,35 +98,32 @@
     $getUsers = $connect->prepare($sql);
     $getUsers->execute();
 
-    $users = $getUsers ->fetchAll();
-?>
+    $users = $getUsers->fetchAll();
+    ?>
     <table>
         <thead>
             <th>ID</th>
             <th>Name</th>
             <th>Username</th>
             <th>Email</th>
-    </thead>
+        </thead>
 
-    <tbody>
-        <?php
-            foreach ($users as $user){
-        ?>  
+        <tbody>
+            <?php
+            foreach ($users as $user) {
+            ?>
                 <tr>
-                    <td> <?= $user['id']?> </td>
-                    <td> <?= $user['name']?> </td>
-                    <td> <?= $user['username']?> </td>
-                    <td> <?= $user['email']?> </td>
-                    <td><?= "<a href='delete.php?id=$user[id]'>Delete</a> | 
-                    <a href='edit.php'?id=$user[id]'> Update </a>"?> </td>
+                    <td> <?= $user['id'] ?> </td>
+                    <td> <?= $user['name'] ?> </td>
+                    <td> <?= $user['username'] ?> </td>
+                    <td> <?= $user['email'] ?> </td>
+                    <td> <?= "<a href='delete.php?id=$user[id]'>Delete</a> | <a href='edit.php?id=$user[id]'> Update </a>" ?> </td>
                 </tr>
-            
-
-        <?php
+            <?php
             }
-        ?>
-    </tbody>
-</table>
-    <a href = "index.html">Add User</a>
+            ?>
+        </tbody>
+    </table>
+    <a href="index.html">Add User</a>
 
-    </body>
+</body>
